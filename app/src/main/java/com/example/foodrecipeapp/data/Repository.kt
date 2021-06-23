@@ -1,10 +1,11 @@
 package com.example.foodrecipeapp.data
 
-import dagger.hilt.android.scopes.ActivityRetainedScoped
+
+import dagger.hilt.android.scopes.ViewModelScoped
 import javax.inject.Inject
 
 //both for landscape and portrait mode
-@ActivityRetainedScoped
+@ViewModelScoped
 class Repository @Inject constructor(
         //injecting both the localDataSource and RemoteDataSource
         remoteDataSource: RemoteDataSource,

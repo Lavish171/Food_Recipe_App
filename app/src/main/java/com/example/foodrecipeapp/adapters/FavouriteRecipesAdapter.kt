@@ -62,6 +62,8 @@ class FavouriteRecipesAdapter(private val requireActivity: FragmentActivity,
         val currentRecipe = favouriteRecipes[position]
         holder.bind(currentRecipe)
 
+        savedItemStateOnScroll(currentRecipe,holder)
+
         /**OnClick Listener to go from favourite fragment to details activity**/
         holder.itemView.favourite_recipesRowLayout.setOnClickListener {
             if (multiSelection) {
@@ -87,13 +89,27 @@ class FavouriteRecipesAdapter(private val requireActivity: FragmentActivity,
                 applySelection(holder, currentRecipe)
                 true
             } else {
-                multiSelection = false
-                false
+                applySelection(holder, currentRecipe)
+                true
             }
 
         }
 
     }
+
+    /**this will be trigeered everytime when we scroll up and down in recycler view**/
+    /**in respect to bug encountering when there are atleast 8 items in fav list,
+     * and if we mark 8th one as selected in contextual mode,1st one automatically marked as selected,though it is
+     * the due to default nature of recycler view
+     */
+      private fun savedItemStateOnScroll(currentRecipe: FavouritesEntity,holder: MyViewHolder)
+      {
+          if (selectedRecipes.contains(currentRecipe)) {
+              changeRecipeStyle(holder, R.color.cardBackgroundLightColor, R.color.colorPrimary)
+          } else {
+              changeRecipeStyle(holder, R.color.cardBackgroundColor, R.color.strokeColor)
+          }
+      }
 
 
     private fun applySelection(holder: MyViewHolder, currentRecipe: FavouritesEntity) {
@@ -116,6 +132,7 @@ class FavouriteRecipesAdapter(private val requireActivity: FragmentActivity,
             0->
             {
                 mActionMode.finish()
+                multiSelection = false
             }
             1->{
                 /**Display the action mode title as per selected recipes size**/

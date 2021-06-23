@@ -15,11 +15,15 @@ import com.example.foodrecipeapp.data.database.entities.RecipesEntity
 import com.example.foodrecipeapp.models.FoodJoke
 import com.example.foodrecipeapp.models.FoodRecipe
 import com.example.foodrecipeapp.util.NetworkResult
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import javax.inject.Inject
 
-class MainViewModel @ViewModelInject constructor(
+/**In 2.31.2 we have to use HiltViewModel**/
+@HiltViewModel
+class MainViewModel @Inject constructor(
     private val repository: Repository,
     application: Application
 ) : AndroidViewModel(application) {

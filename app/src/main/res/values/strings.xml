@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Food Recipe App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipes_fragment">Recipes</string>
+    <string name="favourite_recipes_fragment">Favourites</string>
+    <string name="food_joke_fragment">Food Joke</string>
+    <string name="meal_type">Meal Type</string>
+    <string name="main_course">Main Course</string>
+    <string name="side_dish">Side Dish</string>
+    <string name="ketogenic">Ketogenic</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="pescetarian">Pescetarian</string>
+    <string name="paleo">Paleo</string>
+    <string name="primal">Primal</string>
+    <string name="marinade">Marinade</string>
+    <string name="whole30">Whole30</string>
+    <string name="diet_type">Diet Type</string>
+    <string name="apply">Apply</string>
+    <string name="drink">Drink</string>
+    <string name="snack">Snack</string>
+    <string name="fingerfood">Fingerfood</string>
+    <string name="sauce">Sauce</string>
+    <string name="beverage">Beverage</string>
+    <string name="soup">Soup</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="bread">Bread</string>
+    <string name="appetizer">Appetizer</string>
+    <string name="salad">Salad</string>
+    <string name="search">Search</string>
+    <string name="vegeterian">Vegeterian</string>
+    <string name="title">Title</string>
+
+    <string name="gluten_free">Gluten Free</string>
+    <string name="diary_free">Diary Free</string>
+    <string name="healthy">Healthy</string>
+    <string name="cheap">Cheap</string>
+    <string name="no_favourite_recipe">No Favourite Recipe</string>
+    <string name="delete_favourite_menu">Delete Favourite Menu</string>
+    <string name="delete_all">Delete All</string>
+
+    <string name="lorem_ipsum">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</string>
+    <string name="share">Share</string>
+</resources>

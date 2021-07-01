@@ -7,6 +7,7 @@ class Contants {
         //100x100 is the size of the image which we want to receive
         const val BASE_IMAGE_URL="https://spoonacular.com/cdn/ingredients_250x250/"
         
+        const val API_KEY="d58a1e5dde144b1d94fbb6f201640a2e"
 
         const val RECIPE_RESULT_KEY="recipeBundle"
 

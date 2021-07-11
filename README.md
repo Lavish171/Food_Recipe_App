@@ -1,8 +1,7 @@
 1) Food Recipes application, where we can browse recipes from various different kind of meal and diet types.
-
 2) Application will work with both Remote and local data sources.
-
 3) Given Support for both black and white theme.
+
 ![image](https://user-images.githubusercontent.com/53224426/125182604-0cbc3a00-e22d-11eb-853c-5d82b722ff27.png)
 ![image](https://user-images.githubusercontent.com/53224426/125182678-b1d71280-e22d-11eb-9538-f157d28c73c3.png)
 ![image](https://user-images.githubusercontent.com/53224426/125182621-2fe6e980-e22d-11eb-8bba-5d2270754e31.png)
